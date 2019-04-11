@@ -1,6 +1,4 @@
-#
-# Copyright (C) 2015-2016 The CyanogenMod Project
-#               2017-2018 The LineageOS Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,10 +18,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Lazy stuff.
+$(call inherit-product, vendor/lazy/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_bacon
+PRODUCT_NAME := lazy_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_BRAND := oneplus
 PRODUCT_MANUFACTURER := OnePlus
@@ -32,8 +30,8 @@ PRODUCT_MODEL := A0001
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="bacon-user 5.0.2 LRX22G YNG1TAS0YL release-keys" \
+    PRIVATE_BUILD_DESC="bacon-user 6.0.1 MHC19Q ZNH2KAS1KN release-keys" \
     PRODUCT_NAME=bacon \
     TARGET_DEVICE=A0001
 
-BUILD_FINGERPRINT := oneplus/bacon/A0001:5.0.2/LRX22G/YNG1TAS0YL:user/release-keys
+BUILD_FINGERPRINT := oneplus/bacon/A0001:6.0.1/MHC19Q/ZNH2KAS1KN:user/release-keys
